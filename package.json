@@ -1,23 +1,24 @@
 {
     "bin": {"quarkus-run": "jdeploy-bundle/jdeploy.js"},
-    "author": "",
-    "description": "",
     "main": "index.js",
     "preferGlobal": true,
-    "repository": "",
     "version": "1.0.0",
     "jdeploy": {
-        "jdk": false,
         "fallbackToUniversal": false,
         "generateLegacyBundles": false,
         "publishTargets": [],
         "javaVersion": "21",
-        "documentTypes": [],
         "jar": "build/quarkus-app/quarkus-run.jar",
-        "javafx": false,
         "title": "Quarkus Run",
         "downloadPage": {"platforms": ["default"]},
-        "platformBundlesEnabled": false
+        "platformBundlesEnabled": false,
+        "commands": {"hello-quarkus": {
+            "implements": [
+                "updater",
+                "service_controller"
+            ],
+            "description": "A service example"
+        }}
     },
     "dependencies": {
         "command-exists-promise": "^2.0.2",
