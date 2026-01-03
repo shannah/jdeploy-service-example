@@ -36,3 +36,13 @@ compileJava {
 compileTestJava {
     options.encoding = 'UTF-8'
 }
+
+tasks.register('buildUberJar') {
+    group = 'build'
+    description = 'Builds an uber-jar with all dependencies included'
+    dependsOn 'clean'
+    doFirst {
+        System.setProperty('quarkus.package.jar.type', 'uber-jar')
+    }
+    finalizedBy 'quarkusBuild'
+}

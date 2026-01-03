@@ -9,7 +9,7 @@
         "generateLegacyBundles": false,
         "publishTargets": [],
         "javaVersion": "21",
-        "jar": "build/quarkus-app/quarkus-run.jar",
+        "jar": "build/jdeploy-service-example-1.0.0-SNAPSHOT-runner.jar",
         "title": "Quarkus Run",
         "downloadPage": {"platforms": ["default"]},
         "platformBundlesEnabled": false,
