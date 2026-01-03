@@ -1,5 +1,6 @@
 {
     "bin": {"quarkus-run": "jdeploy-bundle/jdeploy.js"},
+    "description": "A simple quarkus rest app deployed using jDeploy",
     "main": "index.js",
     "preferGlobal": true,
     "version": "1.0.0",
