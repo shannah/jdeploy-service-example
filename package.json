@@ -18,6 +18,7 @@
         }]},
         "publishTargets": [],
         "javaVersion": "21",
+        "urlSchemes": ["helloquarkus"],
         "jar": "build/jdeploy-service-example-1.0.0-SNAPSHOT-runner.jar",
         "title": "Quarkus Run",
         "downloadPage": {"platforms": ["default"]},
