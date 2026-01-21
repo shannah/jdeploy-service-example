@@ -1,12 +1,21 @@
 {
+    "license": "ISC",
     "bin": {"quarkus-run": "jdeploy-bundle/jdeploy.js"},
+    "name": "jdeploy-service-example",
     "description": "A simple quarkus rest app deployed using jDeploy",
+    "files": ["jdeploy-bundle"],
     "main": "index.js",
     "preferGlobal": true,
+    "scripts": {"test": "echo \"Error: no test specified\" && exit 1"},
     "version": "1.0.0",
     "jdeploy": {
         "fallbackToUniversal": false,
         "generateLegacyBundles": false,
+        "helper": {"actions": [{
+            "description": "Open the Settings Panel",
+            "label": "Open Settings",
+            "url": "helloquarkus://settings"
+        }]},
         "publishTargets": [],
         "javaVersion": "21",
         "jar": "build/jdeploy-service-example-1.0.0-SNAPSHOT-runner.jar",
@@ -27,9 +36,5 @@
         "tar": "^4.4.8",
         "yauzl": "^2.10.0",
         "shelljs": "^0.8.4"
-    },
-    "license": "ISC",
-    "name": "jdeploy-service-example",
-    "files": ["jdeploy-bundle"],
-    "scripts": {"test": "echo \"Error: no test specified\" && exit 1"}
+    }
 }
