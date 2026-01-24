@@ -87,6 +87,11 @@ public class Main {
                 public void appActivated() {
                     textArea.append("APP ACTIVATED\n\n");
                     textArea.setCaretPosition(textArea.getDocument().getLength());
+
+                    // Bring frame to front and request focus
+                    frame.setState(JFrame.NORMAL);
+                    frame.toFront();
+                    frame.requestFocus();
                 }
             });
 
