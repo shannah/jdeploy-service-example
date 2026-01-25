@@ -22,7 +22,7 @@
         "urlSchemes": ["helloquarkus"],
         "jar": "build/jdeploy-service-example-1.0.0-SNAPSHOT-runner.jar",
         "title": "Quarkus Run",
-        "downloadPage": {"platforms": ["default"]},
+        "downloadPage": {"platforms": ["all"]},
         "platformBundlesEnabled": false,
         "commands": {"hello-quarkus": {
             "implements": [
