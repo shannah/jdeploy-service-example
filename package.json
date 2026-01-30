@@ -10,19 +10,20 @@
     "version": "1.0.0",
     "jdeploy": {
         "singleton": true,
-        "fallbackToUniversal": false,
         "generateLegacyBundles": false,
+        "javaVersion": "21",
+        "ai": {"mcp": {"command": "hello-quarkus"}},
+        "title": "Quarkus Run",
+        "downloadPage": {"platforms": ["all"]},
+        "fallbackToUniversal": false,
         "helper": {"actions": [{
             "description": "Open the Settings Panel",
             "label": "Open Settings",
             "url": "helloquarkus://settings"
         }]},
         "publishTargets": [],
-        "javaVersion": "21",
         "urlSchemes": ["helloquarkus"],
         "jar": "build/jdeploy-service-example-1.0.0-SNAPSHOT-runner.jar",
-        "title": "Quarkus Run",
-        "downloadPage": {"platforms": ["all"]},
         "platformBundlesEnabled": false,
         "commands": {"hello-quarkus": {
             "implements": [
