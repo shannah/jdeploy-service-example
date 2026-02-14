@@ -21,15 +21,21 @@
             "label": "Open Settings",
             "url": "helloquarkus://settings"
         }]},
-        "publishTargets": [],
+        "publishTargets": [{
+            "name": "github: github",
+            "type": "GITHUB",
+            "url": "https://github.com/shannah/jdeploy-service-example"
+        }],
         "urlSchemes": ["helloquarkus"],
         "jar": "build/jdeploy-service-example-1.0.0-SNAPSHOT-runner.jar",
         "platformBundlesEnabled": false,
         "commands": {"hello-quarkus": {
             "implements": [
                 "updater",
-                "service_controller"
+                "service_controller",
+                "uninstaller"
             ],
+            "uninstallTrigger": "uninstall-app",
             "description": "A service example"
         }}
     },
